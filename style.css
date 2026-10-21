@@ -136,6 +136,10 @@ h1 {
 }
 .grid--square { --ratio: 1 / 1; }
 .grid--wide { --ratio: 2 / 1; }
+/* palette cards are 6:5 with small text: one per row on phones */
+.grid.grid--palette { --ratio: 6 / 5; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 600px) { .grid.grid--palette { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .grid.grid--palette { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 .card {
   margin: 0;

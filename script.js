@@ -18,6 +18,12 @@ const ITEMS = [
   {"id": "English Font 12", "section": "new-designs", "group": "names", "src": "wordmark_s01-12.png", "w": 2048, "h": 768},
   {"id": "English Font 13", "section": "new-designs", "group": "names", "src": "wordmark_s02-1.png", "w": 2048, "h": 768},
   {"id": "Arabic Font 07", "section": "new-designs", "group": "names", "src": "wordmark_s13-06.png", "w": 2048, "h": 768},
+  {"id": "Palette 01", "section": "colour-palettes", "group": null, "src": "palette_mauve-rose.png", "w": 1320, "h": 1100},
+  {"id": "Palette 02", "section": "colour-palettes", "group": null, "src": "palette_lavender-dream.png", "w": 1320, "h": 1100},
+  {"id": "Palette 03", "section": "colour-palettes", "group": null, "src": "palette_peach-blossom.png", "w": 1320, "h": 1100},
+  {"id": "Palette 04", "section": "colour-palettes", "group": null, "src": "palette_blush-sage.png", "w": 1320, "h": 1100},
+  {"id": "Palette 05", "section": "colour-palettes", "group": null, "src": "palette_baby-pink-powder-blue.png", "w": 1320, "h": 1100},
+  {"id": "Palette 06", "section": "colour-palettes", "group": null, "src": "palette_blush-champagne.png", "w": 1320, "h": 1100},
   {"id": "Mark 01", "section": "brand-marks", "group": "tree-and-leaf", "src": "mark_s12-1A.png", "w": 1024, "h": 1024},
   {"id": "Mark 02", "section": "brand-marks", "group": "tree-and-leaf", "src": "mark_s12-1B.png", "w": 1024, "h": 1024},
   {"id": "Mark 03", "section": "brand-marks", "group": "tree-and-leaf", "src": "mark_s12-2A.png", "w": 1024, "h": 1024},
@@ -99,6 +105,7 @@ const ITEMS = [
     if (/^English Font/.test(item.id)) return item.id + ": the name Mahd Clinic in one typeface";
     if (/^Arabic Font/.test(item.id)) return item.id + ": the clinic's Arabic name in one lettering style";
     if (item.section === "logo-concepts") return item.id + ": logo concept";
+    if (item.section === "colour-palettes") return item.id + ": colour palette shown on Mark 25";
     return item.id + ": " + (groupName[item.group] || "brand").toLowerCase() + " symbol";
   }
 
